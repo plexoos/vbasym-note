@@ -1,6 +1,6 @@
 all : vbasym-note.pdf
 
-vbasym-note.pdf : vbasym-note.tex $(wildcard gfx/*)
+vbasym-note.pdf : vbasym-note.tex $(wildcard images/*)
 	xelatex $<
 	xelatex $<
 
