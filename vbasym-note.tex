@@ -3,14 +3,18 @@
 \usepackage{amsmath,amssymb,amsfonts,amsbsy}
 %\usepackage{cite}
 \usepackage{graphicx}
-%\usepackage{wrapfig}
+\usepackage[margin=20mm]{geometry}
+\usepackage{wrapfig}
+\usepackage[pagewise,displaymath]{lineno}
 \usepackage{subfig}
 \usepackage{epsfig}
 \usepackage{authblk}
 \usepackage[d]{esvect}
+\usepackage{calc}
 \usepackage[colorlinks=false,bookmarks=false,pageanchor=true]{hyperref}
 
-\newcommand{\missET}{\not\!\!\vv{E}_T}
+\newcommand{\missET}{\vv{\not{\!\!E}}_T}
+\newcommand{\abs}[1]{\lvert#1\rvert}
 
 \begin{document}
 
