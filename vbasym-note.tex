@@ -257,11 +257,58 @@ needed to calculate the expected number of events using \eqref{eq:yield}. The
 two methods are expected to give consistent results. However, the difference
 can be more perceptible when systematic effects are taken into account.
 
+%}}}
 
 
-\section{Reconstruction of $W$}
+\section{Reconstruction of $W$ Kinematics}
+%{{{
 
-$\missET = - \sum \left( \vv E_e + \vv E_\text{jet} +  \vv E_\text{uncl} \right)$
+In order to fully reconstruct the $W$ kinematics the momenta of all $W$ decay
+products must be measured. The neutrino produced in the leptonically decayed $W$
+cannot be measured in our detector. The momentum of the neutrino can only be
+indirectly deduced from conservation of the total momentum. In the transverse
+plane the initial momentum of the system of interacting partons is negligible
+and so must be the vector sum of all final particles momenta. We define the
+missing transverse energy as a vector restoring the balance in the event:
+
+\begin{equation}
+\missET = - \sum_{i \in \parbox[t]{\widthof{\tiny clusters}}{\tiny jets, tracks, clusters}} \vv P_{i,T}.
+\end{equation}
+
+In a typical collider detector like STAR the problem with measuring the
+longitudinal component of the missing energy is that the total particle momentum
+along the beam direction is not measured due to particles with very high
+rapidities escape the detector. However, in the $W$ events produced at 250~GeV
+at STAR we can assume that most of the $\missET$ is due to the neutrino from the
+$W$ decay. The assumption $\vec{p}_{\nu, T} \approx \missET$ is based on the
+fact that only very little energy is left for anything other than $W$ production
+from the primary hard scattering. At the same time, the beam remnants with high
+longitudinal momentum carry away only a little portion of the total transverse
+momentum. With an assumption that the boson is produced with mass $M_W$ we can
+reconstruct the $z$ component of the neutrino's momentum. For the invariant mass
+we have:
+
+\begin{align}
+M^2_W &= (E_l + E_\nu)^2 - (\vec{p}_l + \vec{p}_\nu)^2,\\
+M^2_W/2 &= \abs{\vec{p}_l} \abs{\vec{p}_\nu} - \vec{p}_{l,T} \cdot \vec{p}_{\nu,T} - \vec{p}_{l,z} \cdot \vec{p}_{\nu,z},
+\end{align}
+
+\noindent
+where we neglected the masses of the both neutino and lepton. Introducing a
+shorthand expression for $A = M^2_W/2 + \vec{p}_{l,T} \cdot \vec{p}_{\nu,T}$,
+after trivial arithmetics we arrive to a quadratic equation for $p_{\nu,z}$:
+
+\begin{align}
+\abs{\vec{p}_{l,T}}^2 p^2_{\nu,z} - 2A p_{l,z} p_{\nu,z} + \abs{\vec{p}_{\nu,T}}^2 \abs{\vec{p}_{l}}^2 - A^2 = 0.
+\end{align}
+
+This equation has two solutions:
+
+\begin{align}
+p_{\nu,z} = \frac{ A p_{l,z} \pm \sqrt{ A^2 p^2_{l,z} - \abs{\vec{p}_{l,T}}^2 (\abs{\vec{p}_{\nu,T}}^2 \abs{\vec{p}_{l}}^2 - A^2) } }{\abs{\vec{p}_{l,T}}^2}
+\end{align}
+
+%}}}
 
 
 \section{Preliminary Sensitivity Studies}
