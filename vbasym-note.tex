@@ -45,6 +45,7 @@ Collisions at RHIC}
 
 
 \section{Introduction}
+%{{{
 
 In this study we propose to measure the asymmetry of the vector bosons produced
 in transversely polarized proton collisions at STAR. First, we focus on the $W$
@@ -77,9 +78,11 @@ A^l_N = A^l_N(\eta_l, \phi_l, p_T) \equiv A_N(y, \phi, p_T) = A_N(\Omega, p_T)
 \label{eq:asym_lepton}
 \end{equation}
 
+%}}}
 
 
 \section{Experimental Viewpoint}
+%{{{
 
 For the SSA measurements we are interested in the proton interactions
 $p^{\uparrow/\downarrow} p \to W^\pm \to e^\pm \nu_e$ in which the spin direction of one
@@ -87,12 +90,12 @@ of the protons is irrelevant, \textit{i.e} unpolarized protons. In the
 experiment we can separately measure full and differential cross sections for
 spin-up ($\sigma_\uparrow$), spin-down ($\sigma_\downarrow$), and unpolarized
 ($\sigma_0$) interactions which are related as:
-%
+
 \begin{align}
 \sigma_\uparrow   &= \sigma_0 (1 + A_N ), \\
 \sigma_\downarrow &= \sigma_0 (1 - A_N ).
 \end{align}
-%
+
 In the following we assume that the polarization vector does not significantly
 deviate from the vertical direction given by the normal unit vector $\vec n$
 along the vertical $y$ axis so, the notation is $P \equiv \vec{P} \cdot
@@ -100,7 +103,7 @@ along the vertical $y$ axis so, the notation is $P \equiv \vec{P} \cdot
 spin-up and spin-down bunches, \textit{i.e.} $P = P_\uparrow = P_\downarrow$.
 For unpolarized cross section $\sigma_0 \equiv (\sigma_\uparrow +
 \sigma_\downarrow)/2$ the asymmetry $A_N$ is expressed as:
-%
+
 \begin{align}
 \label{eq_anapower}
 A_N &= \frac{\sigma_\uparrow - \sigma_\downarrow}{\sigma_\uparrow +
@@ -109,14 +112,15 @@ A_N &= \frac{\sigma_\uparrow - \sigma_\downarrow}{\sigma_\uparrow +
 
 The number of recorded events in which the particle is produced with momentum
 $p_T$ at angle $\Omega$ is:
-%
+
 \begin{align}
 \frac{dN_{\uparrow/\downarrow}}{d\Omega dp_T}(\Omega, p_T) &=
    {\cal L}_{\uparrow/\downarrow} \frac{d\sigma_0}{d\Omega dp_T}(\Omega, p_T)
    \varepsilon(\Omega, p_T) \big( 1 \pm A_N(\Omega, p_T) P \big),
 \label{eq:yield_diff}
 \end{align}
-%
+
+\noindent
 where detection efficiency $\varepsilon$ does not depend on the spin direction
 of the interacting proton. In fact, individual events can be tagged by the
 nominal spin of colliding protons. We thus can bin all collected data  in four
@@ -124,12 +128,13 @@ bins $N_{\uparrow\uparrow}$, $N_{\uparrow\downarrow}$,
 $N_{\downarrow\uparrow}$, and $N_{\downarrow\downarrow}$. For the SSA
 measurement the polarization of one of the beams is ignored by combining the
 yields with opposite spins, \textit{e.g.}
-%
+
 \begin{align}
 N_{\uparrow}   \equiv N_{\uparrow0}   &= N_{\uparrow\uparrow}   + R_{\frac{0\uparrow}{0\downarrow}} N_{\uparrow\downarrow},\\
 N_{\downarrow} \equiv N_{\downarrow0} &= N_{\downarrow\uparrow} + R_{\frac{0\uparrow}{0\downarrow}} N_{\downarrow\downarrow},
 \end{align}
-%
+
+\noindent
 where re-weighting factor $R_{\frac{0\uparrow}{0\downarrow}}$ addresses a
 possible relative difference in the spin-up and spin-down intensities of the
 other beam. Studies have shown that $R_{\frac{0\uparrow}{0\downarrow}} \approx
@@ -141,21 +146,23 @@ $\{\Delta y_i, \Delta\phi_i, \Delta p_{T,i}\} \equiv \{\Delta\Omega_i\{y_i,
 \Delta\phi_i\}, \Delta p_{T,i}\} \equiv \Delta_i$ respectively. The number of
 events in each bin, $N_i$, is calculated by integrating both sides
 of~\eqref{eq:yield_diff} within the bin:
-%
+
 \begin{align}
 N_{\uparrow/\downarrow, i} =
    \int\limits_{\Delta_i} \frac{dN_{\uparrow/\downarrow}}{d\Omega dp_T} d\Omega dp_T.
 \end{align}
-%
+
+\noindent
 In that bin we assume the average value:
-%
+
 \begin{align}
 A_{N,i} = \frac{1}{\Delta_i} \int\limits_{\Delta_i} A_N d\Omega dp_T,
 \end{align}
-%
+
+\noindent
 and similarly for the cross section ($\sigma_{0,i}$) and efficiency
 ($\varepsilon_i$). Finally, for the yields in each bin we can write:
-%
+
 \begin{align}
 N_{\uparrow/\downarrow, i} = {\cal L}_{\uparrow/\downarrow} \sigma_{0,i}
 \varepsilon_i \Delta\Omega_i \Delta p_{T,i} \left( 1 \pm A_{N,i}(\Omega, p_T) P \right)
@@ -168,8 +175,8 @@ direction. We can use this fact to easily get rid of the  quantities of no
 interest in \eqref{eq:yield}. This is achieved by constructing geometric
 means $\sqrt{N_\uparrow(\phi_i)N_\downarrow(\phi_i+\pi)}$ and
 $\sqrt{N_\uparrow(\phi_i+\pi)N_\downarrow(\phi_i)}$ of the yields
-%
-%
+
+
 \begin{align}
 N_\uparrow(\phi_i)       &= {\cal L_\uparrow}
    \sigma_{0}(\phi_i) \varepsilon(\phi_i)    \Delta\Omega_i \Delta p_T \left( 1 + A_{N}(\phi_i) P \right) \\
@@ -177,8 +184,8 @@ N_\uparrow(\phi_i)       &= {\cal L_\uparrow}
 N_\uparrow(\phi_i+\pi)       &= {\cal L_\uparrow}
    \sigma_{0}(\phi_i+\pi) \varepsilon(\phi_i+\pi)    \Delta\Omega_i \Delta p_T \left( 1 + A_{N}(\phi_i+\pi) P \right)
 \end{align}
-%
-%
+
+
 \begin{align}
 N_\downarrow(\phi_i+\pi) &= {\cal L_\downarrow}
    \sigma_{0}(\phi_i+\pi) \varepsilon(\phi_i+\pi) \Delta\Omega_i \Delta p_T \left( 1 - A_{N}(\phi_i+\pi) P \right) \\
@@ -186,8 +193,8 @@ N_\downarrow(\phi_i+\pi) &= {\cal L_\downarrow}
 N_\downarrow(\phi_i) &= {\cal L_\downarrow}
    \sigma_{0}(\phi_i) \varepsilon(\phi_i) \Delta\Omega_i \Delta p_T \left( 1 - A_{N}(\phi_i) P \right)
 \end{align}
-%
-%
+
+
 Using the relations for the asymmetry and cross section $A_{N}(\phi_i+\pi) =
 -A_{N}(\phi_i)$, $\sigma_0(\phi_i+\pi) = \sigma_0(\phi_i)$ we get for $A_N$
 
@@ -203,9 +210,11 @@ A_{N, i} = \frac{1}{P} \frac{%
 \label{eq:asym_sqrt}
 \end{align}
 
+%}}}
 
 
 \section{Correction for Background}
+%{{{
 
 In this analysis an optimal set of cuts is applied to select signal enriched
 events without significant loss in the final statistics. The final yields
@@ -228,9 +237,11 @@ A^\text{sig}_N = \frac{A_N + f_B A^B_N}{1 - f_B}
 \label{eq_bkg_corr}
 \end{equation}
 
+%}}}
 
 
 \section{Sivers Sign Change Extraction}
+%{{{
 
 A binned likelihood method can be used to check the sensitivity of our data to
 the sign of the Sivers function. A direct way of doing this is to compare the
@@ -312,6 +323,7 @@ p_{\nu,z} = \frac{ A p_{l,z} \pm \sqrt{ A^2 p^2_{l,z} - \abs{\vec{p}_{l,T}}^2 (\
 
 
 \section{Preliminary Sensitivity Studies}
+%{{{
 
 In 2011 transversely polarized proton-proton beams were brought into collisions
 at STAR with a center of mass energy of $500~GeV$. In this regime the $W$ is
@@ -359,13 +371,13 @@ from the earlier STAR analysis~\cite{WCrossSecRun9} that reported the production
 cross section using $\approx 13~\text{pb}^{-1}$ of inegrated luminosity:
 %
 %$N_{W/Z} = N_\text{obs} - N_\text{bkg}$
-%
+
 \begin{align*}
 N_{W^+} &= 496 - 37 = 459,\\
 N_{W^-} &= 148 - 26 = 125,\\
 N_Z &= 13 - 0 = 13.
 \end{align*}
-%
+
 To reflect the expected increase in the integrated luminosity we scale the
 above numbers a factor $\approx 23$. In order to illustrate the sensitivity of
 the future measurement to the non-vanishing $W$ and $Z$ $A_N$ we calculate the
@@ -384,6 +396,8 @@ decaying leptonically at STAR as a function of the boson's rapidity.}
 
 \label{fig:MC_Wmeas_stat} 
 \end{figure}
+
+%}}}
 
 
 \newpage
